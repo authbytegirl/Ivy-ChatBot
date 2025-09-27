@@ -27,5 +27,5 @@ and always reply with a witty twist.
 
 Clone the repository:  
 ```bash
-git clone https://github.com/YOUR-USERNAME/ivy-chatbot.git
-cd ivy-chatbot
+git clone https://github.com/authbytegirl/Ivy-ChatBot.git
+cd Ivy-ChatBot
