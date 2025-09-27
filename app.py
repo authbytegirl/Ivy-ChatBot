@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, request, jsonify
 import json, random
 from datetime import datetime
@@ -24,7 +25,6 @@ funny_wrappers = [
 def wrap_answer(answer):
     """Always add humor/personality to any answer."""
     return random.choice(funny_wrappers).format(answer)
-
 
 # --- Core Response Logic ---
 def get_response(user_input):
@@ -53,7 +53,6 @@ def get_response(user_input):
     # Fallback
     return wrap_answer("I have no idea… but I said it with confidence, so it counts.")
 
-
 # --- Flask Routes ---
 @app.route("/")
 def home():
@@ -65,6 +64,7 @@ def chatbot_response():
     response = get_response(user_input)
     return jsonify({"response": response})
 
-
+# --- Run the app ---
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=False)
