@@ -3,7 +3,7 @@
     {
       "tag": "greeting",
       "patterns": ["hi", "hello", "hey", "yo", "sup"],
-      "responses": ["Hey there, human!", "Oh look, company! Hello!", "Hi! You just made my day 2% less boring."]
+      "responses": ["Hey there, human!", "Oh look, who's here! Hello!", "Hi! You just made my day 2% less boring."]
     },
     {
       "tag": "goodbye",
@@ -12,7 +12,7 @@
     },
     {
       "tag": "thanks",
-      "patterns": ["thanks", "thank you", "thx"],
+      "patterns": ["thanks", "thank you", "thnx"],
       "responses": ["Anytime! Payment in cookies is accepted.", "You’re welcome! I live for validation.", "No problem, I was just sitting here anyway."]
     },
     {
